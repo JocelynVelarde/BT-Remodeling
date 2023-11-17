@@ -125,7 +125,7 @@
       </div>
     </nav>
     <!-- Navbar -->
-    
+
     <!-- Carousel wrapper -->
     <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
       <!-- Indicators -->
@@ -247,74 +247,94 @@
         }
       </style>
 
+<style>
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-      <!--Section: Content-->
-      <section class="text-center">
-        <h4 class="mb-5"><strong>Some of our recent projects...</strong></h4>
+  .image-overlay:hover {
+    opacity: 1;
+  }
 
-        <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.decorilla.com%2Fonline-decorating%2Fwp-content%2Fuploads%2F2018%2F03%2Faffordable-interior-designer-nyc.png&f=1&nofb=1&ipt=a85b4e3112f1f38367d758485918bb68674cb0e4a9b7ce318aa96ed78f926117&ipo=images"
-                  class="img-fluid" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body custom-card-body">
-                <h5 class="card-title">Interior Design</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-                  nesciunt laborum incidunt. Officia, quam consectetur.
-                </p>
-              </div>
-            </div>
-          </div>
+  .image-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.decorilla.com%2Fonline-decorating%2Fwp-content%2Fuploads%2F2016%2F07%2Ffind-an-interior-designer.jpg&f=1&nofb=1&ipt=09de047a3d8f49519600c22ef33cadc527f075502d7123a0c490c16e7d7b276b&ipo=images"
-                  class="img-fluid" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body custom-card-body">
-                <h5 class="card-title">Outdoor Design</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-                  nesciunt laborum incidunt. Officia, quam consectetur.
-                </p>
-              </div>
-            </div>
-          </div>
+  .image-description {
+    font-size: 14px;
+    text-align: center;
+  }
+</style>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhousely.com%2Fwp-content%2Fuploads%2F2016%2F10%2Fbackyard-covered-patio-ideas1.jpg&f=1&nofb=1&ipt=85d82679d517b4720449cee46d40a9adb83ae598dad59615be719526dc652cb8&ipo=images"
-                  class="img-fluid" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                </a>
-              </div>
-              <div class="card-body custom-card-body">
-                <h5 class="card-title">Interior Design</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
-                  nesciunt laborum incidunt. Officia, quam consectetur.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Section: Content-->
+<!--Section: Content-->
+<section class="text-center">
+  <h4 class="mb-5"><strong>Some of our recent projects...</strong></h4>
+<!-- Gallery -->
+<div class="row">
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Wintry Mountain Landscape"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+    />
+
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Boat on Calm Water"
+    />
+  </div>
+
+  <div class="col-lg-4 mb-4 mb-lg-0">
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Waves at Sea"
+    />
+
+    <img
+      src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Yosemite National Park"
+    />
+  </div>
+</div>
+<!-- Gallery -->
+</section>
+<!--Section: Content-->
+
+
+
+
+
+
 
       <hr class="my-5" />
 
