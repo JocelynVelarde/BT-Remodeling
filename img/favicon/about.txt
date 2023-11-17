@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Pathway Extreme
+- Font Author: Copyright 2019 The Pathway Extreme Project Authors (https://github.com/etunni/Pathway-Variable-Font)
+- Font Source: http://fonts.gstatic.com/s/pathwayextreme/v3/neI6zCC3pJ0rsaH2_sD-QttXPfDPonvkQ-pxx5gufvP2VmLjiFyxGf8BLymNjYv2Oy6vkLmw4xak2N11Kyw3igP5eg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
