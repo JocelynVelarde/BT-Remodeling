@@ -39,8 +39,8 @@
                   <h4 class="mb-1 me-1">${this.price}</h4>
                 </div>
                 <div class="d-flex flex-column mt-4">
-                  <button class="btn btn-primary btn-sm" type="button">Details</button>
-                  <button class="btn btn-outline-primary btn-sm mt-2" type="button">
+                  <button class="btn btn-info btn-sm" type="button">Details</button>
+                  <button class="btn btn-outline-info btn-sm mt-2" type="button">
                     Add to wishlist
                   </button>
                 </div>
