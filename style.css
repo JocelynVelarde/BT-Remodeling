@@ -5,26 +5,7 @@
   height: 100vh;
 }
 
-.carousel-item:nth-child(1) {
-  background-image: url('/img/landing1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 
-.carousel-item:nth-child(2) {
-  background-image: url('/img/landing2.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.carousel-item:nth-child(3) {
-  background-image: url('/img/landing5.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
 
 @media (min-width: 992px) {
   #introCarousel {
