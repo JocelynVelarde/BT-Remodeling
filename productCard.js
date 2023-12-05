@@ -10,37 +10,33 @@
     render() {
       return `
         <div class="card shadow-0 border rounded-3">
-          <div class="card-body">
+          <div class="card-body row">
             
-              <div class="col-md-12 ">
-                <div class="bg-image hover-zoom ripple rounded ripple-surface">
-                  <img src="${this.image}" class="w-100" />
-                  <a href="#!">
-                    <div class="hover-overlay">
-                      <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-6 ">
-                <h5>${this.title}</h5>
-                <div class="d-flex flex-row">
-                  <div class="text-danger mb-1 me-2">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
+            <div class="col-md-6">
+              <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                <img src="${this.image}" class="img-fluid" />
+                <a href="#!">
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
                   </div>
+                </a>
+              </div>
+            </div>
+    
+            <div class="col-md-6">
+              <h5>${this.title}</h5>
+              <div class="d-flex flex-row">
+                <div class="text-danger mb-1 me-2">
+                 
                 </div>
-                <p class="text mb-4 mb-md-0">${this.subtitle}</p>
               </div>
-              <div class="col-md-6  border-sm-start-none border-start">         
-              </div>
+              <p class="text mb-4 mb-md-0">${this.subtitle}</p>
+            </div>  
             
           </div>
         </div>`;
     }
+    
   }
 
 const productCard1 = new ProductCard("General Contractor", " As a general contractor, the company oversees all aspects of a home renovation project, coordinating with subcontractors and ensuring the project is completed to the client's satisfaction.",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarketingplatform.vivial.net%2Fsites%2Fdefault%2Ffiles%2Finline_images%2Fgeneral-contractor_7.jpg&f=1&nofb=1&ipt=2689ddef2ff89b5fa74afcd260fb66984188cc7608f8bd770fc2d44b6733571e&ipo=images");
