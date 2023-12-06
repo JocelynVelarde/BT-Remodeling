@@ -35,9 +35,11 @@
             
           </div>
         </div>`;
+      
     }
     
   }
+
 
 const productCard1 = new ProductCard("General Contractor", " As a general contractor, the company oversees all aspects of a home renovation project, coordinating with subcontractors and ensuring the project is completed to the client's satisfaction.",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarketingplatform.vivial.net%2Fsites%2Fdefault%2Ffiles%2Finline_images%2Fgeneral-contractor_7.jpg&f=1&nofb=1&ipt=2689ddef2ff89b5fa74afcd260fb66984188cc7608f8bd770fc2d44b6733571e&ipo=images");
 document.getElementById("productCard1").innerHTML = productCard1.render();
@@ -52,7 +54,7 @@ document.getElementById("productCard3").innerHTML = productCard3.render();
 const productCard4 = new ProductCard("Framing metal", "This involves constructing the skeletal framework for commercial buildings using metal studs.",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fplasterercentralcoast.com.au%2Fwp-content%2Fuploads%2F2020%2F05%2FMetal-partition-framing-scaled.jpeg&f=1&nofb=1&ipt=c62935707073c6266178507a6f1ec6dc1c2252b6fd479fd3a3fba8d5a9959108&ipo=images");
 document.getElementById("productCard4").innerHTML = productCard4.render();
 
-const productCard5 = new ProductCard("Acoustical ceilings", "This service focuses on installing ceilings designed to enhance sound quality and reduce noise levels in commercial settings, such as offices or retail spaces.",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Frhs-construction.com%2Fwp-content%2Fuploads%2F2019%2F10%2FCeilings-1536x1152.jpg&f=1&nofb=1&ipt=9f5b2be5b13303e9b7d8ee1c8d0c90cc1561f5d8b89b5228c0d2b3cd62ecb2c5&ipo=images");
+const productCard5 = new ProductCard("Acoustical ceilings", "This service focuses on installing ceilings designed to enhance sound quality and reduce noise levels in commercial settings, such as offices or retail spaces.",  "https://i.pinimg.com/236x/e7/66/81/e7668133ca738540beb80c50f71a719e.jpg");
 document.getElementById("productCard5").innerHTML = productCard5.render();
 
 const productCard6 = new ProductCard("Painting", "Professional interior and exterior painting services to refresh and enhance the aesthetic of a home.",  "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fmiaspainting.com%2Fassets%2Fimages%2FPAINT_HOUSE03.jpg&f=1&nofb=1&ipt=0358d6b87d45b50c643037d77926fa6cc400c0814285dd48e31ff877aa18773e&ipo=images");
@@ -66,6 +68,9 @@ document.getElementById("productCard8").innerHTML = productCard8.render();
 
 const productCard9 = new ProductCard("Carpentry", " This covers a range of woodworking tasks from building custom cabinets to installing moldings and trim in residential properties.",  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thecollege.co.uk%2Fsites%2Fdefault%2Ffiles%2Fcourse%2FWoodwork%2520Image%25205.jpg&f=1&nofb=1&ipt=f772efd5b0941db7c47c11243b0311d9b07ae05258d9bb0b23e4d7f10c16e2b7&ipo=images");
 document.getElementById("productCard9").innerHTML = productCard9.render();
+
+const productCard10 = new ProductCard("Remodeling", " BT Remodeling offers comprehensive remodeling services designed to transform your spaces into personalized, functional, and aesthetically pleasing areas. Our services encompass a wide range of remodeling projects",  "https://i.pinimg.com/564x/ee/f6/ec/eef6ec8670386009b6f5cb6112b4db58.jpg");
+document.getElementById("productCard10").innerHTML = productCard10.render();
 
 
   
