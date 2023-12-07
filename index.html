@@ -31,12 +31,9 @@
   <!--Main Navigation-->
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000; height: auto;" id="Inicio">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="z-index: 2000; height: auto;" >
       <div class="container-fluid">
         <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" href="#index.html">
-          <img src="img/logo.jpeg" alt="BT Remodeling Logo" width="90" height="30">
-        </a>
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
           aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -44,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarExample01">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#Inicio">Home</a>
+              <a class="nav-link" aria-current="page" href="#introCarousel">Home</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" aria-current="page" href="#Acerca">About</a>
@@ -62,6 +59,16 @@
     <!-- Navbar -->
 
     <style>
+.navbar-cafe {
+  background-color: rgb(51, 41, 28); /* O el color específico de café que prefieras */
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 50px; /* Ajusta este valor según sea necesario */
+}
+
+
       .carousel-item:nth-child(1) {
   background-image: url('https://i.ibb.co/qrYcKk7/landing2.png');
   background-repeat: no-repeat;
@@ -182,6 +189,21 @@ margin: 35px 0 20px 0 !important;
 
     </style>
 
+    <script>
+      window.addEventListener('scroll', function() {
+  var navbar = document.querySelector('.navbar');
+  var sectionAcerca = document.getElementById('Acerca');
+
+  // Comprobar si hemos pasado la sección Acerca
+  if (window.scrollY >= sectionAcerca.offsetTop) {
+    navbar.classList.add('navbar-cafe');
+  } else {
+    navbar.classList.remove('navbar-cafe');
+  }
+});
+
+    </script>
+
     <!-- Carousel wrapper -->
     <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
       <!-- Indicators -->
@@ -200,9 +222,8 @@ margin: 35px 0 20px 0 !important;
               <div class="text-white text-center">
                 <h1 class="mb-3">CUSTOM INTERIOR DESIGNS</h1>
                 <h5 class="mb-4">for any Interior and Exterior</h5>
-                <a class="btn btn-outline-light btn-lg m-2" href="#intro" role="button" rel="nofollow"
-                  target="_blank">Get Started</a>
-                <a class="btn btn-outline-light btn-lg m-2" href="#intro" target="_blank" role="button">About us</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="#reviews" role="button" 
+                 >Client Reiews</a>
               </div>
             </div>
           </div>
@@ -226,7 +247,7 @@ margin: 35px 0 20px 0 !important;
             <div class="d-flex justify-content-center align-items-center h-100">
               <div class="text-white text-center">
                 <h2>Indoors, outdoors and living rooms</h2>
-                <a class="btn btn-outline-light btn-lg m-2" aria-current="page" href="#intro">Learn more</a>
+                <a class="btn btn-outline-light btn-lg m-2" aria-current="page" href="#questions">Frequently asked questons</a>
               </div>
             </div>
           </div>
@@ -379,7 +400,7 @@ margin: 35px 0 20px 0 !important;
       <section class="text-center">
         <div class="row d-flex justify-content-center">
           <div class="col-md-10 col-xl-8 text-center">
-            <h3 class="mb-4">Our testimonials precede us</h3>
+            <h3 class="mb-4" id="reviews">Our testimonials precede us</h3>
             <p class="mb-4 pb-2 mb-md-5 pb-md-0">
              
               In this section, client testimonials provide valuable insights into the experiences of individuals or businesses that have previously collaborated with our services. These comments serve as a testament to the quality and effectiveness of our work. They offer prospective clients a glimpse into the real-world impact and satisfaction derived from our solutions. Whether highlighting successful outcomes, commendable service, or noteworthy aspects of the collaboration, client testimonials contribute to building trust and credibility.
@@ -499,7 +520,7 @@ margin: 35px 0 20px 0 !important;
 
       <!--Section: FAQ-->
       <section>
-        <h3 class="text-center mb-4 pb-2 text-dark fw-bold">Frequently Asked Questions 🔍</h3>
+        <h3 class="text-center mb-4 pb-2 text-dark fw-bold" id="questions">Frequently Asked Questions 🔍</h3>
         <p class="text-center mb-5">
           Find the answers for the most frequently asked questions below
         </p>
