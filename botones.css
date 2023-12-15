@@ -1,0 +1,65 @@
+.botoncin{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+
+
+.button{
+  height: 55px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 0.5px solid white;
+  box-shadow: 2px 2px 0px #817557;
+}
+
+.button:hover{
+  border: none;
+  box-shadow: none;
+}
+
+.button::before{
+  content: "";
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  background-image: conic-gradient(#615741 20deg, transparent 120deg);
+  border-radius: 50%;
+  animation: Animate 1s linear infinite;
+}
+
+@keyframes Animate {
+  from{
+      transform: rotate(0deg);
+  }
+  to{
+      transform: rotate(-360deg);
+  }
+}
+
+.button::after{
+  content: "";
+  position: absolute;
+  height: 55px;
+  width: 150px;
+  background-color: black;
+}
+
+.button:hover:after{
+  height: 50px;
+  width: 145px;
+}
